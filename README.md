@@ -6,5 +6,5 @@ See branches for more examples.
 
 If using SpringData with CDI/EJB then the initial request to the Repository always fails with `GenericJDBCException: Unable to acquire JDBC Connection`.
 
-See [/maxantswarm-problems/blob/problem/spring-data-initial-request/src/test/java/ch/maxant/demo/swarmproblems/ApplicationIT.java](ApplicationIT.java) for an example.
+See [ApplicationIT.java](/maxant/swarm-problems/blob/problem/spring-data-initial-request/src/test/java/ch/maxant/demo/swarmproblems/ApplicationIT.java) for an example.
 
