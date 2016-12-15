@@ -14,15 +14,6 @@ public class Main {
 
         JAXRSArchive deployment = buildDeployment();
 
-        /*
-        call using:
-            GET / HTTP/1.1
-            Host: localhost:8080
-            Authorization: Basic UGVubnk6cGFzc3dvcmQ=
-            Cache-Control: no-cache
-            Postman-Token: feaa4370-3628-9b6b-32ba-08b25c211b0a
-         */
-
         swarm.deploy(deployment);
     }
 
