@@ -30,6 +30,7 @@ public class Main {
         JAXRSArchive deployment = ShrinkWrap.create(JAXRSArchive.class, "appName.war"); //provides default Application and @ApplicationPath
         deployment.addPackages(true, Main.class.getPackage());
         deployment.addAsWebInfResource(new ClassLoaderAsset("META-INF/persistence.xml", Main.class.getClassLoader()), "classes/META-INF/persistence.xml");
+        deployment.addAsWebInfResource(new ClassLoaderAsset("META-INF/beans.xml", Main.class.getClassLoader()), "classes/META-INF/beans.xml"); //needed otherwise it doesnt seem to be able to create cdi beans
         deployment.addResource(EmployeeResource.class);
         deployment.addAllDependencies();
 
